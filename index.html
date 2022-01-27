@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+  <link rel='stylesheet' href='styles.css'>
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="container">
+    <div class="details">
+      <div class='now-playing'>Playing 1 of 3</div>
+      <img class="track-art" src='./images/ukulele.jpg'></img>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist"></div>
+    </div>
+    
+    <audio src='./music/hey.mp3' id='audio'></audio>
+    
+    <div class="buttons">
+      <div class="prev-track">
+        <i class='fas fa-step-backward'></i>
+      </div>
+      <div class="play-track span-two">
+        <i class='fas fa-play-circle'></i>
+      </div>
+      <div class="next-track">
+        <i class='fas fa-step-forward'></i>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="current-time">00:00</div>
+      <input type='range' min='1' max='100' value='0' class='seek-slider'>
+      <div class='total-duration'>00:00</div>
+    </div>
+    
+    <div class="slider">
+      <i class='fas fa-volume-down'></i>
+      <input type='range' min='1' max='100' value='99' class='volume-slider'>
+      <i class='fas fa-volume-up'></i>
+    </div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+</html>
