@@ -75,7 +75,7 @@ const prevTrack = () => {
   if(trackIndex > 0) {
     trackIndex--
   } else {
-    trackIndex = allTrack[trackIndex] - 1
+    trackIndex = allTracks[trackIndex] - 1
   }
   loadTrack(trackIndex)
   playTrack()
